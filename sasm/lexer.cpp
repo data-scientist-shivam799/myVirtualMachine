@@ -92,7 +92,7 @@ strings Lexer::lex(std::string s) {
                 break;
 
             case DUMP:
-                if (j<0) {
+                if (j>0) {
                     lexeme[j] = 0;
                     strlst.push_back(lexeme);
                     j = 0;
